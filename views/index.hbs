@@ -1,2 +1,8 @@
 <h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<p>Sending you to '{{url}}' in {{sec}} seconds</p>
+<script>
+    setTimeout(function () {
+        // after 2 seconds
+        window.location.replace("{{url}}" + "?abc=123456");
+    }, 1000 * {{sec}})
+</script>
